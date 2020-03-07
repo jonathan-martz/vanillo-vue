@@ -1,0 +1,13 @@
+{
+    "name": "jonathan-martz/vanillo-vue",
+    "description": "Vanillo Global VueJs Implementation",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jonathan-martz",
+            "email": "github@jmartz.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
