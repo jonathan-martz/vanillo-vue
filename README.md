@@ -1,11 +1,19 @@
 ##### Vanillo Global VueJs Setup
 
+Install dependecies via yarn
+```
+yarn install --save vue
+yarn install --save vuex
+```
 
-Install dependecies via npm/yarn
+Add to Template
 ```
-"dependencies": {
-    "vue": "^2.6.11",
-    "vue-router": "^3.1.6",
-    "vuex": "^3.1.2"
-  },
+<vn-product-card></vn-product-card>
 ```
+
+
+Add to webpack.mix.js
+```
+.js('vendor/jonathan-martz/vanillo-vue/src/resource/assets/js/vue-init.js', 'public/js/vue-init.js')
+```
+

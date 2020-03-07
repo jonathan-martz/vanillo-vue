@@ -1,15 +1,10 @@
 let Vue = require('vue');
 
-// needed ?
-window.Vue = Vue;
+// @todo rewrite app.blade.php
+// import App from './App.vue';
 
-// Setup Vue State Managment
-import Vuex from 'vuex'
+import Vuex from 'vuex';
 Vue.use(Vuex);
-
-// Setup Vue Router
-import VueRouter from 'vue-router'
-Vue.use(VueRouter);
 
 const store = new Vuex.Store({
                                  state: {
@@ -17,11 +12,10 @@ const store = new Vuex.Store({
 
                                      }
                                  },
-                                 mutations: {
-
-                                 }
+                                 mutations: {}
                              });
 
-// Vue.component('vn-product-list', require('./components/VnProductList.vue'));
+Vue.component('vn-product-card', require('./components/vn-product-card'));
+Vue.component('vn-category-grid', require('./components/vn-category-grid'));
 
-const app = new Vue({store,render: h => h(App),}).$mount('#app');
+const app = new Vue({store}).$mount('#app');
