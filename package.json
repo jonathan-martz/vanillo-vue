@@ -1,0 +1,16 @@
+{
+  "name": "vanillo-vue",
+  "version": "0.0.1",
+  "description": "Global Vue Implementation for Vanillo",
+  "dependencies": {
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.6",
+    "vuex": "^3.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathan-martz/vanillo-vue.git"
+  },
+  "author": "Jonathan Martz",
+  "license": "MIT"
+}
