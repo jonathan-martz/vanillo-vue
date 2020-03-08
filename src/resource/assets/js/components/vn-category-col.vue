@@ -12,28 +12,26 @@
 
 <script>
     export default {
-        mounted: function(){},
+        mounted: function(){
+            console.log(this.category);
+        },
         data: function(){
             return {};
         },
         props: {
             category: {
-                type: Number,
+                type: String,
                 default: function(){
-                    return 1;
+                    return "1";
                 }
             },
             cols: {
                 type: String,
                 default: function(){
-                    return "3";
+                    return "4";
                 }
             }
         },
         methods: {}
     }
 </script>
-
-<style scoped>
-
-</style>

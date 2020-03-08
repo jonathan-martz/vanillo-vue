@@ -2,8 +2,12 @@
     <div class="vn-category-grid">
         <div class="container">
             <div class="row">
-                <div v-for="row in parseInt(rows)" class="col-12">
-                    <vn-category-row cols="3" rows="2"></vn-category-row>
+                <div class="col-12">
+                    <h2 class="h4 mt-4">Category Name</h2>
+                    <hr>
+                </div>
+                <div v-for="row in parseInt(rows)" class="col-12 p-0">
+                    <vn-category-row cols="4" rows="2"></vn-category-row>
                 </div>
             </div>
         </div>
@@ -21,7 +25,7 @@
         },
         props: {
             category: {
-                type: Number,
+                type: String,
                 default: function(){
                     return 1;
                 }
@@ -35,7 +39,7 @@
             cols: {
                 type: String,
                 default: function(){
-                    return "3";
+                    return "4";
                 }
             }
         },
@@ -49,5 +53,7 @@
 </script>
 
 <style scoped>
-
+    hr {
+        border: 1px solid #1F6FED;
+    }
 </style>

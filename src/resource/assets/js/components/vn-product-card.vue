@@ -54,5 +54,3 @@
         }
     }
 </script>
-
-<style scoped></style>
