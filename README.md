@@ -17,3 +17,8 @@ Add to webpack.mix.js
    	.js('vendor/jonathan-martz/vanillo-vue/src/resource/assets/js/vue-init-frontend.js', 'public/js/vue-init-frontend.js')
 ```
 
+Add to app.blade.php
+```
+<script src="{{ asset('js/vue-init-frontend.js') }}"></script>
+```
+
