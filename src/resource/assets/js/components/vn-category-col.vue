@@ -2,8 +2,8 @@
     <div class="vn-category-grid">
         <div class="container">
             <div class="row">
-                <div v-for="row in parseInt(rows)" class="col-12">
-                    <vn-category-row cols="3" rows="2"></vn-category-row>
+                <div class="col-12">
+                    <vn-product-card v-for="col in cols" ></vn-product-card>
                 </div>
             </div>
         </div>
@@ -13,6 +13,7 @@
 <script>
     export default {
         mounted: function(){
+            this.load();
         },
         data: function(){
             return {
@@ -26,12 +27,6 @@
                     return 1;
                 }
             },
-            rows: {
-                type: String,
-                default: function(){
-                    return "1";
-                }
-            },
             cols: {
                 type: String,
                 default: function(){
@@ -39,12 +34,17 @@
                 }
             }
         },
-        computed: {
-            colSize: function(){
-                return Math.floor(12 / this.rows);
+        methods: {
+            load: function(){
+                let that = this;
+                setTimeout(function(){
+                    console.log('Product load ' + that.item);
+                    // Load Category Items
+                    // Split Categorys into rows
+                    that.loaded = true;
+                }, 5000);
             }
-        },
-        methods: {}
+        }
     }
 </script>
 
