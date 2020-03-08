@@ -2,8 +2,10 @@
     <div class="vn-product-view">
         <div class="card mb-2">
             <div v-if="!loaded">
-                <img class="card-img-top" v-bind:src="'https://via.placeholder.com/200x100?text=Loading'"
-                     alt="Product Image">
+                <a href="#">
+                    <img class="card-img-top" v-bind:src="'https://via.placeholder.com/200x100?text=Loading'"
+                         alt="Product Image">
+                </a>
                 <div class="card-body">
                     <h5 class="card-title">Placeholder Title</h5>
                     <p class="card-text">Lorem Ipsum before ...</p>
@@ -53,6 +55,4 @@
     }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

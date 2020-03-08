@@ -8,7 +8,7 @@ yarn install --save vuex
 
 Add to Template
 ```
-<vn-product-card></vn-product-card>
+<vn-category-grid></vn-category-grid>
 ```
 
 
